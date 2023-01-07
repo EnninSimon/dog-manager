@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <form class="task-form">
+        <h4>dog manager</h4>
+        <div class="form-control">
+            <input type="text" name="name" class="dog-input-name" placeholder="Name of dog" />
+            <input type="text" name="breed" class="dog-input-breed" placeholder="Type of breed" />
+            <input type="number" name="age" class="dog-input-age" placeholder="Age" />
+            <button type="submit" class="btn submit-btn">submit</button>
+        </div>
+        <div class="form-alert"></div>
+    </form>
+    <section class="tasks-container">
+        <p class="loading-text">Loading... Please wait...</p>
+        <div class="dogs"></div>
+    </section>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./browser-app.js"></script>
+</body>
+
+</html>
